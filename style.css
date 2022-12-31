@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background: url(images/pattern-background-desktop.svg) no-repeat center/cover;
+    background-color: var(--VeryPaleBlue);
+    font-size: 1rem;
+}
+
+
+img{
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
+
+
+.container-wrapper{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 31.25rem;
+    width: 23.4rem;
+    background-color: white;
+    margin: 1.25rem auto;
+}
+
+
+.title{
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+.title h1{
+    font-weight: 900;
+}
+
+.title p{
+    opacity: 0.5;
+    margin-top: 1rem;
+}
+
+.planIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+    background-color: var(--VeryPaleBlue);
+    width: 21.2rem;
+    padding: 1.25rem;
+    margin: 0px 20px 15px 20px; 
+}
+
+.planIcon p{
+    margin-left: 0.75rem;
+}
+
+.makeWeight{
+    font-weight: 700;
+}
+
+.makeOpac{
+    opacity: 0.6;
+}
+
+
+#changeHover{
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 110px;
+}
+
+#changeHover:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    width: 21.2rem;
+    margin: 0px 15px 20px 20px;
+}
+
+.btn_{
+    border-radius: 0.6rem;
+    margin-bottom: 0.8rem;
+    height: 2.5rem;
+    background-color: var(--BrightBlue);
+    border: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 17px 10px -10px hsl(224, 23%, 55%, 0.8);
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+.btn_:hover{
+    opacity: 1;
+    transform: translate(0px, -3px);
+}
+
+.btn_1{
+    border-radius: 0.6rem;
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: bold;
+    transition: all ease-in-out 300ms;
+    -webkit-transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -oz-transition: all ease-in-out 300ms;
+    opacity: 0.5;
+    margin-bottom: 3rem;
+}
+
+.btn_1:hover{
+    transform: translate(0px, -1px);
+    transform: -webkit-translate(0px, -1px);
+    transform: -moz-translate(0px, -1px);
+    transform: -oz-translate(0px, -1px);
+    opacity: 0.8;
+}
+
+.attribution{
+    margin-top: auto;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--BrightBlue);
+    font-weight: bold;
+    
+}
+@media screen and (min-width: 20rem){
+    .container-wrapper{
+        width: 23.4rem;
+    }
+}
